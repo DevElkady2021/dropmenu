@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="online.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        online Store
+    </h1>
+    <header>
+        <a href="">Home</a>
+        <a href="">Entertainment</a>
+        <a href="">Traviling</a>
+        <a href="">Shopping</a>
+        <a href="">Learing</a>
+    </header>
+    <div class="none">
+
+    </div>
+    <div class="none1">
+
+    </div>
+
+
+    <h2 class="w3-center"></h2>
+
+    <div class="continer">
+
+
+        <div class="w3-content w3-section">
+            <img class="mySlides" src="img/WhatsApp Image 2021-06-12 at 3.25.53 PM.jpeg">
+            <img class="mySlides" src="img/WhatsApp Image 2021-06-12 at 3.25.54 PM (1).jpeg">
+            <img class="mySlides" src="img/WhatsApp Image 2021-06-12 at 3.25.54 PM.jpeg">
+            <img class="mySlides" src="img/WhatsApp Image 2021-06-12 at 3.25.56 PM.jpeg">
+            <img class="mySlides" src="img/WhatsApp Image 2021-06-12 at 3.25.57 PM (1).jpeg">
+            <img class="mySlides" src="img/WhatsApp Image 2021-06-12 at 3.25.57 PM.jpeg">
+
+
+
+
+        </div>
+
+        <div class="section">
+            <form action="">
+                <input type="text" name="" id="" placeholder="user">
+                <input type="password" name="" id="" placeholder="password">
+                <button>login</button>
+                <a class="aaa" href=""> Register now</a>
+            </form>
+            <br><br>
+            <h2> Welcome to our website</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla animi rerum nam maiores commodi minus
+                reprehenderit iure odio iusto harum at sit ea hic, odit exercitationem sed quibusdam vitae perspiciatis.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+<h5>
+    copyRight@Lana
+</h5>
+
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
